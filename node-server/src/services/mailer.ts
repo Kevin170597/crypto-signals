@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-const appPass = 'hcbhkvahsuqggcav';
+const appPass = process.env.GMAIL;
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
